@@ -4,4 +4,5 @@ RUN apk add --no-cache curl \
     && apk add python \
     && apk add py-pip \
     && apk add jq \
-    && pip install pymsteams
+    && git clone https://github.com/jjh74/pymsteams.git ~/pymsteams \
+    && cd ~/pymsteams && python ~/pymsteams/setup.py install
